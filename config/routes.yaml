@@ -1,0 +1,11 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+# the "car_route" route name is not important yet
+car_number:
+  path: /car
+  controller: App\Controller\CarController::number
+
+cars:
+  path: /cars
+  controller: App\Controller\CarController::getCars
