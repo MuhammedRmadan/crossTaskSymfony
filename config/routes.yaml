@@ -9,3 +9,7 @@ car_number:
 cars:
   path: /cars
   controller: App\Controller\CarController::getCars
+
+index:
+    path: /cars/index
+    controller: App\Controller\CarController::index
