@@ -7,9 +7,5 @@ car_number:
   controller: App\Controller\CarController::number
 
 cars:
-  path: /cars
-  controller: App\Controller\CarController::getCars
-
-index:
-    path: /cars/index
+    path: /cars
     controller: App\Controller\CarController::index

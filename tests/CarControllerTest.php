@@ -7,7 +7,11 @@ use Symfony\Component\HttpClient\HttpClient;
 
 class CarControllerTest extends TestCase
 {
-    /** test */
+    /**
+     * A test validation for get cars
+     *
+     * @return void
+     */
     public function testGetCars()
     {
 

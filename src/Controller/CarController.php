@@ -20,24 +20,13 @@ class CarController extends APIController
         );
     }
 
-
-    public function getCars(Request $request)
-    {
-        //get current locale
-        $locale = $request->getLocale();
-
-        // from inside a controller
-        $repository = $this->getDoctrine()->getRepository(Car::class);
-
-        $cars = $repository->getAll();
-
-
-        $response = new Response(json_encode(array('success' => true, 'data' => $this->json($cars))));
-        $response->headers->set('Content-Type', 'application/json');
-
-        return $response;
-    }
-
+    /**
+     * index function
+     * retreive paginated records of cars
+     * @param : Request $request
+     * @param :  PaginatorInterface $paginator
+     * @return \Illuminate\Http\Response
+     */
     public function index(Request $request, PaginatorInterface $paginator)
     {
         //retreive teh entity manager of Doctrine
