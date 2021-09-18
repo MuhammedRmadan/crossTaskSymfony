@@ -1,5 +1,6 @@
 Please read these notes first :
 -I couldnot bring the project to life using docker ..after hours of debugging i found that the problem was that i am windows user and i cant afford using my limited resources a lap with working ubunto OS with my personal lap.
+-The VM image didnot preserve the state due to unknown error also.
 -The solution i came up with is to establish a fresh of symfony project having the lasy version and transfer the business logic to it and then i accomplished the required task and uploaded the project on Github.
 -To make the project work just clone from the repository https://github.com/MuhammedRmadan/crossTaskSymfony.git and then run composer install and symfony server:start.
 -To run the unit tests on this version just type php "vendor/phpunit/phpunit/phpunit".
