@@ -4,3 +4,4 @@ Please read these notes first :
 -To make the project work just clone from the repository https://github.com/MuhammedRmadan/crossTaskSymfony.git and then run composer install and symfony server:start.
 -To run the unit tests on this version just type php "vendor/phpunit/phpunit/phpunit".
 -This is the endpoint to filter the cars using Postman http://localhost:8000/cars/index?limit=5&page=1&sort=c.id&direction=desc&search=black.
+-I did the task with barely knowing the framework ..and i did it with the knowledge ie get from laravel ..and searching through the documentation.
