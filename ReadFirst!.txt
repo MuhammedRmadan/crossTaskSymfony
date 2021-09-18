@@ -3,6 +3,8 @@ Please read these notes first :
 -The VM image didnot preserve the state due to unknown error also.
 -The solution i came up with is to establish a fresh of symfony project having the lasy version and transfer the business logic to it and then i accomplished the required task and uploaded the project on Github.
 -To make the project work just clone from the repository https://github.com/MuhammedRmadan/crossTaskSymfony.git and then run composer install and symfony server:start.
+-To run migrations first create databse named symfonyTask and php bin/console doctrine:migrations:migrate and then insert data in the table and search them.
+-If you want ready database away from the migrations ..you can import the exported file symfonytask.sql into your phpmyadmin with prefilled data.
 -To run the unit tests on this version just type php "vendor/phpunit/phpunit/phpunit".
--This is the endpoint to filter the cars using Postman http://localhost:8000/cars/index?limit=5&page=1&sort=c.id&direction=desc&search=black.
+-This is the endpoint to filter the cars using Postman http://localhost:8000/cars?limit=5&page=1&sort=c.id&direction=desc&search=mer.
 -I did the task with barely knowing the framework ..and i did it with the knowledge ie get from laravel ..and searching through the documentation.
